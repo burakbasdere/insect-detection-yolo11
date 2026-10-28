@@ -1,5 +1,9 @@
 # Böcek ve Omurgasız Tespiti: Düşük Donanım için Hafif Nesne Algılama
 
+![Python](https://img.shields.io/badge/python-3.9%2B-blue) ![YOLO11](https://img.shields.io/badge/model-YOLO11-orange) ![License](https://img.shields.io/badge/license-AGPL--3.0-green) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/burakbasdere/insect-detection-yolo11/blob/main/demo_colab.ipynb)
+
+**Türkçe** | [English](README_en.md)
+
 YOLO11 ile 12 sınıflı böcek ve omurgasız tespiti. Amaç, **zayıf donanımda (tek CPU çekirdeği, gömülü cihaz, telefon) hızlı çalışan** hafif bir model üretmek ve doğruluk/hız dengesini ölçmektir.
 
 **Sınıflar:** karınca, arı, böcek, tırtıl, solucan, kulağakaçan, çekirge, güve, sümüklüböcek, salyangoz, eşek arısı, kınkanatlı (weevil).
@@ -9,6 +13,11 @@ YOLO11 ile 12 sınıflı böcek ve omurgasız tespiti. Amaç, **zayıf donanımd
 - İki model karşılaştırıldı: **YOLO11n** (~2,6 M parametre) ve **YOLO11s**.
 - YOLO11s, mAP50'de yaklaşık 1,3 puan daha iyi ama yaklaşık 3 kat yavaş.
 - Zayıf donanım hedefi için **YOLO11n** daha uygun: tek CPU çekirdeğinde ~27 FPS, ONNX boyutu ~10,6 MB.
+
+## Hızlı deneme
+
+- Colab: yukarıdaki **Open In Colab** rozeti ile kurulum yapmadan kendi fotoğrafınızda deneyin.
+- Yerelde web arayüzü: `pip install -r requirements.txt` ardından `python app.py`.
 
 ## Veri seti
 
@@ -76,6 +85,6 @@ results[0].show()
 - Hız değerleri tek bir CPU benzetimiyle ölçüldü; hedef cihazda ayrıca test edilmelidir.
 - 12 sınıf dışındaki canlılar tanınmaz.
 
-## Lisans notu
+## Lisans
 
-Modeller [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics) ile eğitildi; Ultralytics ve türetilen ağırlıklar AGPL-3.0 lisansı kapsamındadır. Veri seti ayrı lisansa tabidir (Roboflow kaynağına bakın).
+Kod ve modeller AGPL-3.0 ([LICENSE](LICENSE)) kapsamındadır. Modeller [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics) ile eğitildi; Ultralytics ve türetilen ağırlıklar AGPL-3.0 lisansı kapsamındadır. Veri seti ayrı lisansa tabidir (Roboflow kaynağına bakın).
