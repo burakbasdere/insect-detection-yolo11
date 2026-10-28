@@ -39,6 +39,8 @@
 
 ## Results
 
+![YOLO11n vs YOLO11s comparison](assets/model_comparison.png)
+
 | Model | Precision | Recall | mAP50 | mAP50-95 | ONNX (MB) | CPU 1 core (ms) | FPS |
 |---|---|---|---|---|---|---|---|
 | YOLO11n | 0.842 | 0.706 | 0.768 | 0.466 | 10.58 | 36.8 | 27.2 |

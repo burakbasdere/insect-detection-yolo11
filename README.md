@@ -40,6 +40,8 @@ YOLO11 ile 12 sınıflı böcek ve omurgasız tespiti. Amaç, **zayıf donanımd
 
 ## Sonuçlar
 
+![YOLO11n ve YOLO11s karşılaştırması](assets/model_comparison.png)
+
 | Model | Precision | Recall | mAP50 | mAP50-95 | ONNX (MB) | CPU 1 çekirdek (ms) | FPS |
 |---|---|---|---|---|---|---|---|
 | YOLO11n | 0.842 | 0.706 | 0.768 | 0.466 | 10.58 | 36.8 | 27.2 |
