@@ -75,3 +75,7 @@ results[0].show()
 - Eğitim görüntüleri tek kaynaktan (Roboflow) geldiği için gerçek dünya koşullarında (farklı ışık, arka plan) doğruluk düşebilir.
 - Hız değerleri tek bir CPU benzetimiyle ölçüldü; hedef cihazda ayrıca test edilmelidir.
 - 12 sınıf dışındaki canlılar tanınmaz.
+
+## Lisans notu
+
+Modeller [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics) ile eğitildi; Ultralytics ve türetilen ağırlıklar AGPL-3.0 lisansı kapsamındadır. Veri seti ayrı lisansa tabidir (Roboflow kaynağına bakın).
