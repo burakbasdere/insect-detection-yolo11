@@ -69,21 +69,6 @@ One example per class from the test set: the single-object image the model predi
 | [models/yolo11n.onnx](models/yolo11n.onnx) | YOLO11n, ONNX (~10.6 MB) |
 | [models/yolo11n_int8.tflite](models/yolo11n_int8.tflite) | YOLO11n, INT8 TFLite (~3 MB), for mobile/embedded |
 
-## Usage
-
-```bash
-pip install -r requirements.txt
-yolo predict model=models/yolo11n.onnx source=image.jpg imgsz=416
-```
-
-```python
-from ultralytics import YOLO
-
-model = YOLO("models/yolo11n.onnx")
-results = model.predict("image.jpg", imgsz=416)
-results[0].show()
-```
-
 ## Limitations
 
 - Training images come from a single source (Roboflow), so accuracy may drop in real-world conditions (different lighting, backgrounds).

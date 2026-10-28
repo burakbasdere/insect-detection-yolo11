@@ -70,23 +70,6 @@ Test setinden, her sınıf için modelin en yüksek güvenle doğru tahmin etti�
 | [models/yolo11n.onnx](models/yolo11n.onnx) | YOLO11n, ONNX (~10,6 MB) |
 | [models/yolo11n_int8.tflite](models/yolo11n_int8.tflite) | YOLO11n, INT8 TFLite (~3 MB), mobil/gömülü için |
 
-## Kullanım
-
-```bash
-pip install -r requirements.txt
-yolo predict model=models/yolo11n.onnx source=resim.jpg imgsz=416
-```
-
-Python ile:
-
-```python
-from ultralytics import YOLO
-
-model = YOLO("models/yolo11n.onnx")
-results = model.predict("resim.jpg", imgsz=416)
-results[0].show()
-```
-
 ## Sınırlamalar
 
 - Eğitim görüntüleri tek kaynaktan (Roboflow) geldiği için gerçek dünya koşullarında (farklı ışık, arka plan) doğruluk düşebilir.
