@@ -1,0 +1,3 @@
+model,precision,recall,mAP50,mAP50-95,onnx_MB,cpu_1thread_ms,cpu_1thread_FPS
+yolo11n,0.8417,0.7063,0.7682,0.466,10.58,36.8,27.2
+yolo11s,0.8592,0.7318,0.7812,0.4755,37.85,102.3,9.8
