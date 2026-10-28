@@ -48,6 +48,12 @@
 
 Speed was measured with ONNX Runtime, single thread, 416x416 input (low-end device simulation). Real device results may differ. Raw values: [results_summary.csv](results_summary.csv).
 
+### Example predictions (detection + classification)
+
+One example per class from the test set: the single-object image the model predicted correctly with the highest confidence (YOLO11n, confidence threshold 0.25). These are **hand-picked best cases**, not representative of average performance; see the metrics above for overall accuracy. Images come from the Roboflow dataset.
+
+![Example predictions](assets/detection_examples.jpg)
+
 ### Plots
 
 | | YOLO11n | YOLO11s |

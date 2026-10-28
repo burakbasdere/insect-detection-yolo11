@@ -49,6 +49,12 @@ YOLO11 ile 12 sınıflı böcek ve omurgasız tespiti. Amaç, **zayıf donanımd
 
 Hız ölçümü ONNX Runtime ile, tek iş parçacığı ve 416x416 girişle yapılmıştır (zayıf cihaz benzetimi). Gerçek cihaz sonuçları farklı olabilir. Ham değerler: [results_summary.csv](results_summary.csv).
 
+### Örnek tahminler (algılama + sınıflandırma)
+
+Test setinden, her sınıf için modelin en yüksek güvenle doğru tahmin ettiği tek nesneli bir örnek (YOLO11n, güven eşiği 0,25). Bunlar **seçilmiş en iyi örneklerdir**, ortalama performansı temsil etmez; genel başarı için yukarıdaki metriklere bakın. Görüntüler Roboflow veri setinden alınmıştır.
+
+![Örnek tahminler](assets/detection_examples.jpg)
+
 ### Grafikler
 
 | | YOLO11n | YOLO11s |
